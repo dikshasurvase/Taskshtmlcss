@@ -1,0 +1,17 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;padding:60px 20px;background:#f1f5f9;font-family:"Segoe UI",system-ui,sans-serif;text-align:center}
+h1{font-size:2.4rem;color:#0f172a}.sub{color:#64748b;margin:8px 0 50px}
+.plans{display:flex;flex-wrap:wrap;gap:28px;justify-content:center;align-items:stretch}
+.plan{position:relative;width:290px;padding:40px 30px;background:#fff;border-radius:18px;border-top:8px solid var(--c);box-shadow:0 10px 25px rgba(0,0,0,.08);transition:transform .3s,box-shadow .3s}
+.plan:hover{transform:translateY(-12px);box-shadow:0 22px 40px color-mix(in srgb,var(--c) 35%,transparent)}
+.basic{--c:#10b981}.pro{--c:#6366f1;transform:scale(1.05)}.premium{--c:#f59e0b}
+.pro:hover{transform:scale(1.05) translateY(-12px)}
+.plan h2{color:var(--c);font-size:1.5rem}
+.price{font-size:3rem;font-weight:800;margin:14px 0;color:#0f172a}.price small{font-size:1rem;color:#64748b;font-weight:400}
+.plan ul{list-style:none;margin:20px 0 30px;text-align:left}
+.plan li{padding:10px 0;border-bottom:1px dashed #e2e8f0;color:#334155}
+.plan li::before{content:"\2713";color:var(--c);font-weight:700;margin-right:10px}
+.plan a{display:block;padding:13px;border:2px solid var(--c);border-radius:10px;color:var(--c);font-weight:700;text-decoration:none;transition:.25s}
+.plan a:hover{background:var(--c);color:#fff}
+.pro a{background:var(--c);color:#fff}.pro a:hover{filter:brightness(1.1)}
+.ribbon{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:#6366f1;color:#fff;padding:5px 16px;border-radius:20px;font-size:.8rem;font-weight:700}

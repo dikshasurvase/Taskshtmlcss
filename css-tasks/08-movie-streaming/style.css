@@ -1,0 +1,19 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0a0f;color:#fff;font-family:"Segoe UI",system-ui,sans-serif}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;gap:30px;padding:16px 4vw;background:linear-gradient(#000,transparent)}
+.nav h1{color:#e50914;font-size:1.6rem;letter-spacing:2px}
+.nav a{color:#ddd;text-decoration:none;margin-right:18px}.nav a:hover{color:#fff}
+.banner{min-height:75vh;display:flex;align-items:flex-end;padding:0 4vw 60px;background:linear-gradient(0deg,#0a0a0f 5%,transparent 60%),linear-gradient(90deg,rgba(0,0,0,.8),transparent),url(../images/hero.svg) center/cover}
+.banner h2{font-size:clamp(2.2rem,6vw,4rem)}
+.banner p{max-width:46ch;margin:12px 0 22px;color:#ddd}
+.play,.more{display:inline-block;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:700;transition:.2s}
+.play{background:#fff;color:#000}.more{background:rgba(255,255,255,.25);color:#fff}
+.play:hover{background:#ddd}.more:hover{background:rgba(255,255,255,.4)}
+.row{padding:10px 4vw 20px}.row h3{margin-bottom:12px}
+.cards{display:flex;gap:14px;overflow-x:auto;padding:8px 0 14px;scroll-snap-type:x mandatory}
+.movie{position:relative;flex:0 0 clamp(130px,16vw,190px);border-radius:8px;overflow:hidden;scroll-snap-align:start;transition:transform .3s}
+.movie:hover{transform:scale(1.08);z-index:2}
+.movie img{width:100%;display:block}
+.ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;padding:12px;background:linear-gradient(transparent,rgba(0,0,0,.9));opacity:0;transition:.3s;color:#fff}
+.movie:hover .ov{opacity:1}.ov span{color:#e50914;font-size:.85rem}
+@media (max-width:600px){.nav nav{display:none}}

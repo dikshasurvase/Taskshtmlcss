@@ -1,0 +1,12 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0b1220;color:#fff;font-family:"Segoe UI",system-ui,sans-serif;padding:40px 5vw}
+header{text-align:center;margin-bottom:30px}header p{color:#94a3b8;margin-top:6px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));grid-auto-rows:220px;gap:16px}
+figure{position:relative;overflow:hidden;border-radius:14px}
+figure.wide{grid-column:span 2}figure.tall{grid-row:span 2}
+img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+figure:hover img{transform:scale(1.15)}
+figcaption{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;background:linear-gradient(transparent 40%,rgba(0,0,0,.85));opacity:0;transform:translateY(20px);transition:.4s}
+figure:hover figcaption{opacity:1;transform:none}
+figcaption p{color:#cbd5e1}
+@media (max-width:600px){figure.wide{grid-column:span 1}.gallery{grid-auto-rows:200px}}
