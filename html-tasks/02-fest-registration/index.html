@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Fest Registration</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<p class="back"><a href="../index.html">&larr; All tasks</a></p>
+<h1>Spandan 2026 &ndash; College Fest Registration</h1>
+<form action="#" method="post">
+<fieldset><legend>Personal details</legend>
+<label for="name">Full name</label><input type="text" id="name" name="name" required>
+<label for="email">Email</label><input type="email" id="email" name="email" required>
+<label for="phone">Phone</label><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number" required>
+<p>Gender:
+<label style="display:inline"><input type="radio" name="gender" value="male" required> Male</label>
+<label style="display:inline"><input type="radio" name="gender" value="female"> Female</label>
+<label style="display:inline"><input type="radio" name="gender" value="other"> Other</label></p>
+</fieldset>
+<fieldset><legend>Academic &amp; event details</legend>
+<label for="course">Course</label>
+<select id="course" name="course" required>
+<option value="">-- Select course --</option><option>B.Tech</option><option>BCA</option><option>BBA</option><option>B.Sc</option><option>B.Com</option>
+</select>
+<label for="event">Event</label>
+<select id="event" name="event" required>
+<option value="">-- Select event --</option>
+<optgroup label="Technical"><option>Hackathon</option><option>Quiz</option></optgroup>
+<optgroup label="Cultural"><option>Dance</option><option>Singing</option></optgroup>
+</select>
+<label for="date">Preferred event date</label><input type="date" id="date" name="date" required>
+</fieldset>
+<p><input type="submit" value="Register"> <input type="reset" value="Clear"></p>
+</form></body></html>

@@ -1,0 +1,15 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#1e1b4b,#4338ca 60%,#db2777);font-family:"Segoe UI",system-ui,sans-serif}
+.card{width:min(340px,90vw);background:#fff;border-radius:24px;text-align:center;padding:0 28px 32px;overflow:hidden;box-shadow:0 25px 50px rgba(0,0,0,.35);transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-10px) rotate(-1deg);box-shadow:0 35px 60px rgba(0,0,0,.45)}
+.banner{height:110px;margin:0 -28px;background:linear-gradient(120deg,#6366f1,#ec4899)}
+.avatar{width:130px;height:130px;border-radius:50%;border:6px solid #fff;margin-top:-65px;object-fit:cover;transition:transform .4s}
+.card:hover .avatar{transform:scale(1.08) rotate(6deg)}
+h1{margin-top:12px;font-size:1.6rem;color:#1e1b4b}
+.role{color:#6366f1;font-weight:600;margin:4px 0 14px}
+.bio{color:#555;line-height:1.6;font-size:.95rem}
+.social{list-style:none;display:flex;justify-content:center;gap:12px;margin:20px 0}
+.social a{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#eef2ff;color:#4338ca;font-weight:700;text-decoration:none;transition:.25s}
+.social a:hover{background:#4338ca;color:#fff;transform:translateY(-4px)}
+.btn{display:inline-block;padding:12px 30px;border-radius:30px;background:#4338ca;color:#fff;text-decoration:none;font-weight:600;transition:.25s}
+.btn:hover{background:#db2777;letter-spacing:.5px}

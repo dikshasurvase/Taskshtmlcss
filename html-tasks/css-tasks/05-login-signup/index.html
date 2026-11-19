@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Signup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <form class="box" action="#">
+    <h2>Welcome back</h2>
+    <div class="field"><input type="email" id="e1" placeholder=" " required><label for="e1">Email</label></div>
+    <div class="field"><input type="password" id="p1" placeholder=" " minlength="6" required><label for="p1">Password</label></div>
+    <button type="submit">Log in</button>
+    <p>New here? <a href="#signup">Create an account</a></p>
+  </form>
+  <form class="box" id="signup" action="#">
+    <h2>Create account</h2>
+    <div class="field"><input type="text" id="n2" placeholder=" " required><label for="n2">Full name</label></div>
+    <div class="field"><input type="email" id="e2" placeholder=" " required><label for="e2">Email</label></div>
+    <div class="field"><input type="password" id="p2" placeholder=" " minlength="6" required><label for="p2">Password (6+ characters)</label></div>
+    <button type="submit">Sign up</button>
+    <p>Already registered? <a href="#">Log in</a></p>
+  </form>
+</main>
+</body></html>

@@ -1,0 +1,31 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,sans-serif;color:#1e293b;line-height:1.6}
+.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 6vw;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08)}
+.logo{font-size:1.5rem;font-weight:800;color:#6d28d9;text-decoration:none}
+.nav nav{display:flex;align-items:center;gap:22px}.nav nav a{text-decoration:none;color:#334155}
+.cta{background:#6d28d9;color:#fff!important;padding:8px 18px;border-radius:8px}
+#menu,.burger{display:none}
+.hero{text-align:center;padding:100px 6vw;background:linear-gradient(135deg,#ede9fe,#e0f2fe)}
+.hero h1{font-size:clamp(2rem,5vw,3.6rem);max-width:18ch;margin:0 auto 16px;line-height:1.15}
+.hero p{max-width:48ch;margin:0 auto 28px;color:#475569;font-size:1.15rem}
+.btn{display:inline-block;background:#6d28d9;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:600;transition:.25s}
+.btn:hover{background:#5b21b6;transform:translateY(-2px)}
+.sec{padding:80px 6vw;text-align:center}.gray{background:#f8fafc}.narrow{max-width:800px;margin:auto;background:none}
+.sec h2{font-size:2rem;margin-bottom:36px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.feat,.price,blockquote{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:28px;transition:.25s}
+.feat:hover,.price:hover{box-shadow:0 14px 28px rgba(109,40,217,.15);transform:translateY(-5px)}
+.feat p{color:#64748b;margin-top:8px}
+blockquote{font-size:1.05rem;font-style:italic}cite{display:block;margin-top:14px;font-style:normal;font-weight:600;color:#6d28d9;font-size:.9rem}
+.amt{font-size:2.6rem;font-weight:800;margin:6px 0}.price .btn{margin-top:14px}
+.hot{border:2px solid #6d28d9;transform:scale(1.04)}
+details{text-align:left;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600}details p{margin-top:8px;color:#64748b}
+footer{background:#1e1b4b;color:#c7d2fe;text-align:center;padding:30px}
+@media (max-width:850px){
+  .grid3{grid-template-columns:1fr}.hot{transform:none}
+  .burger{display:block;font-size:1.6rem;cursor:pointer}
+  .nav nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:18px;box-shadow:0 8px 12px rgba(0,0,0,.08)}
+  #menu:checked~nav{display:flex}
+}

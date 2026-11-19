@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Appointment Booking</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<p class="back"><a href="../index.html">&larr; All tasks</a></p>
+<h1>CityCare Hospital &ndash; Book an Appointment</h1>
+<form action="#" method="post">
+<fieldset><legend>Patient details</legend>
+<label for="pn">Patient name</label><input type="text" id="pn" required>
+<label for="age">Age</label><input type="number" id="age" min="0" max="120" required>
+<p>Gender: <label style="display:inline"><input type="radio" name="g" required> Male</label> <label style="display:inline"><input type="radio" name="g"> Female</label> <label style="display:inline"><input type="radio" name="g"> Other</label></p>
+<label for="ph">Phone</label><input type="tel" id="ph" required>
+<label for="em">Email</label><input type="email" id="em">
+</fieldset>
+<fieldset><legend>Appointment</legend>
+<label for="dep">Department</label>
+<select id="dep"><option value="">-- Select --</option><option>General Medicine</option><option>Cardiology</option><option>Orthopedics</option><option>Pediatrics</option><option>Dermatology</option></select>
+<label for="doc">Doctor</label>
+<select id="doc"><option value="">-- Select --</option>
+<optgroup label="General Medicine"><option>Dr. A. Kulkarni</option><option>Dr. S. Mehta</option></optgroup>
+<optgroup label="Cardiology"><option>Dr. R. Iyer</option></optgroup>
+<optgroup label="Orthopedics"><option>Dr. P. Shinde</option></optgroup>
+<optgroup label="Pediatrics"><option>Dr. N. Khan</option></optgroup></select>
+<label for="ad">Appointment date</label><input type="date" id="ad" required>
+<label for="at">Preferred time</label><input type="time" id="at">
+</fieldset>
+<fieldset><legend>Medical information</legend>
+<label for="sy">Symptoms</label><textarea id="sy" rows="4" cols="50"></textarea>
+<p>Medical history:<br>
+<label style="display:inline"><input type="checkbox"> Diabetes</label>
+<label style="display:inline"><input type="checkbox"> Hypertension</label>
+<label style="display:inline"><input type="checkbox"> Asthma</label>
+<label style="display:inline"><input type="checkbox"> Allergies</label>
+<label style="display:inline"><input type="checkbox"> None</label></p>
+<label for="mh">Other notes</label><textarea id="mh" rows="3" cols="50"></textarea>
+</fieldset>
+<button type="submit">Book appointment</button>
+</form></body></html>
